@@ -2,6 +2,10 @@
 /* Секция Чем мы занимаемся */
 
 .we-doing {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
     padding-top: 0;
   }
   .we-doing__secondary-title {

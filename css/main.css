@@ -641,7 +641,13 @@ a {
 
 /* Секция Чем мы занимаемся */
 .we-doing {
+  display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .we-doing {
+    display: block;
+  }
 }
 
 .we-doing__secondary-title {
