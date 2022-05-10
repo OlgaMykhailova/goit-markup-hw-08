@@ -8,7 +8,11 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -101,9 +105,13 @@
 
   margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   color: var(--primary-text-color);
 }
