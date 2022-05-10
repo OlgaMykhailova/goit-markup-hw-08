@@ -1,7 +1,5 @@
 /* Секция Особенности */
-.features__secondary-title {
-  margin-bottom: 50px;
-}
+
 .features__list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -17,7 +15,7 @@
   }
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
-    &:not(:nth-child(2n)) {
+    &:nth-child(2n+1) {
       margin-right: 30px;
     }
     &:not(:nth-last-child(-n + 2)) {
