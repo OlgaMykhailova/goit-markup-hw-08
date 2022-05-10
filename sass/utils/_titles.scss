@@ -1,0 +1,35 @@
+/* Заголовки h2 */
+
+.secondary-title {
+    color: var(--secondary-text-color);
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  
+  /* Заголовки h3 */
+  .third-title {
+    color: var(--secondary-text-color);
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+    text-align: center;
+  }
+  
+  .subtitle {
+    color: var(--third-text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }

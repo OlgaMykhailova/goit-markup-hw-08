@@ -1,0 +1,10 @@
+.switches {
+    display: flex;
+    justify-content: center;
+    }
+  .switches__indent {
+    margin-bottom: 56px;
+  }
+  .switches__item:not(:last-child) {
+    margin-right: 8px;
+  }

@@ -1,0 +1,111 @@
+/* Футер */
+.footer__logo {
+  margin-bottom: 20px;
+}
+.logo__light {
+  color: var(--third-text-color);
+}
+.footer {
+  background-color: var(--third-bg-color);
+  padding: 60px 0;
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address__link {
+  color: var(--footer-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--location {
+    color: var(--third-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address__item {
+  width: 231px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.subscription_subtitle,
+.join_subtitle {
+  margin-bottom: 20px;
+}
+.footer__flex {
+  display: flex;
+  align-items: baseline;
+}
+.footer__item:not(:last-child) {
+  margin-right: 70px;
+}
+.join__list {
+  display: flex;
+}
+.join__link {
+  @extend %centeredFlex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.join__icon {
+  fill: var(--primary-bg-color);
+}
+.join__social:not(:last-child) {
+  margin-right: 10px;
+}
+.subscription__form {
+  display: flex;
+}
+.subscription__input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+  margin: 0 12px 0 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--third-bg-color);
+
+  &::placeholder {
+    color: var(--footer-text-color);
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+  &:not(:placeholder-shown) {
+    color: var(--footer-text-color);
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+}
+.subscription__button {
+  @extend %centeredFlex;
+
+  padding: 9px 29px;
+}
+.button__text {
+  margin-right: 10px;
+}
