@@ -55,6 +55,38 @@
             </a>
           </li>
         </ul>
+      <button class="menu-button" type="button">
+        <svg class="menu-button__icon" width="40px" height="40px">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      </div>
+      
+        <div class="mobile-menu is-hidden">
+          <div class="container">
+          <button class="menu-button-close" type="button">
+            <svg  class="menu-button-close__icon" width="40px" height="40px">
+              <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__navitem"><a class="mobile-menu__navlink" href="">Студия</a></li>
+              <li class="mobile-menu__navitem"><a class="mobile-menu__navlink" href="">Портфолио</a></li>
+              <li class="mobile-menu__navitem"><a class="mobile-menu__navlink" href="">Контакты</a></li>
+            </ul>
+           <div class="mobile-menu__bottom">
+            <ul class="mobile-menu__contacts">
+              <li class="mobile-menu__contactsitem"><a class="mobile-menu__contactslink mobile-menu__contactslink--accent" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="mobile-menu__contactsitem"><a class="mobile-menu__contactslink" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-menu__socials">
+              <li class="mobile-menu__socialsitem"><a class="mobile-menu__socialslink" href="">Instagram</a></li>
+              <li class="mobile-menu__socialsitem"><a class="mobile-menu__socialslink" href="">Twitter</a></li>
+              <li class="mobile-menu__socialsitem"><a class="mobile-menu__socialslink" href="">Facebook</a></li>
+              <li class="mobile-menu__socialsitem"><a class="mobile-menu__socialslink" href="">LinkedIn</a></li>
+            </ul>
+           </div>
+                </div>
       </div>
     </header>
 
@@ -610,6 +642,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
