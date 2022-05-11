@@ -1,7 +1,8 @@
 /* Футер */
 .footer__logo {
   margin-bottom: 20px;
-}
+    }
+ 
 .logo__light {
   color: var(--third-text-color);
 }
@@ -29,21 +30,56 @@
   }
 }
 .address__item {
+  text-align: center;
   width: 231px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
 .subscription_subtitle,
-.join_subtitle {
+.join__subtitle {
   margin-bottom: 20px;
 }
-.footer__flex {
+.footer__wrap {
+  @media screen and (min-width: 768px) {
   display: flex;
+  justify-content: space-around;
   align-items: baseline;
 }
-.footer__item:not(:last-child) {
-  margin-right: 70px;
+}
+.footer__flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: baseline;
+  }
+ 
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+    &:not(:last-child) {
+      margin-right: 70px;
+  }
+  
+}
+}
+.join {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .join__list {
   display: flex;
@@ -67,15 +103,42 @@
 .join__social:not(:last-child) {
   margin-right: 10px;
 }
+.subscription {
+  width: 100%;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+    
+  }
+
 .subscription__form {
   display: flex;
-}
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+ }
+ .subscription__label {
+   width: 100%;
+   @media screen and (min-width: 1200px) {
+     margin-right: 12px;
+   }
+ }
 .subscription__input {
-  width: 358px;
+  max-width: 450px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
   height: 50px;
 
   padding: 15px 16px;
-  margin: 0 12px 0 0;
+  margin: 0 0 20px 0;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -100,6 +163,7 @@
   &:focus-visible {
     outline: none;
   }
+}
 }
 .subscription__button {
   @extend %centeredFlex;
