@@ -1,10 +1,27 @@
 .switches {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  @media screen and (min-width: 768px) {
     justify-content: center;
-    }
-  .switches__indent {
-    margin-bottom: 56px;
+    flex-wrap: nowrap;
   }
-  .switches__item:not(:last-child) {
+}
+.switches__indent {
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.switches__item {
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  &:not(:last-child) {
     margin-right: 8px;
   }
+}
