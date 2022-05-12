@@ -50,6 +50,12 @@
   letter-spacing: 0.01em;
 
   color: var(--primary-text-color);
+  @media screen and (max-width: 767px) {
+    .request__field:hover &,
+    .request__field:focus &{
+      color: var(--accent-color);
+    }
+  }
 }
 .request__input {
   display: block;
