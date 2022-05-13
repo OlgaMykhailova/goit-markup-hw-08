@@ -1147,6 +1147,11 @@ a {
     align-items: baseline;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__wrap {
+    margin-bottom: 60px;
+  }
+}
 
 .footer__flex {
   width: 100%;
@@ -1165,6 +1170,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .footer__item {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__item {
