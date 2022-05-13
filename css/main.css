@@ -1172,7 +1172,7 @@ a {
   align-items: center;
 }
 @media screen and (max-width: 767px) {
-  .footer__item {
+  .footer__item--flex {
     margin-bottom: 60px;
   }
 }
