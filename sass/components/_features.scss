@@ -35,6 +35,9 @@
   margin-bottom: 10px;
 
   color: var(--secondary-text-color);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__text {

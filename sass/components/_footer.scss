@@ -65,7 +65,6 @@
 .footer__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
   align-items: center;
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
@@ -129,9 +128,10 @@
  }
 .subscription__input {
   max-width: 450px;
+  margin-bottom: 20px;
   @media screen and (min-width: 480px) {
     width: 450px;
-    margin-bottom: 20px;
+    
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
